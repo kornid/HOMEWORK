@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+}
+
+body{
+    background-color: #475e2d;
+}
+
+.flex{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 230px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: #add56e;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    }
+
+.card:hover{
+    border-radius: 40px;
+    border: 3px solid #93f106;
+    transition: 450ms;
+    transform: scale(1.2);
+}
+
+.card h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    margin: 8px 0;
+}
