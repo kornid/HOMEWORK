@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atom-preloader</title>
+    <style>
+        .loader {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 50% auto;
+        }
+
+        .orbit {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 200px;   /* 2 × rx */
+            height: 80px;   /* 2 × ry */
+            margin: -40px 0 0 -100px; /* смещение к центру */
+            border: 1px solid #bbb;
+            border-radius: 50%;       /* превращает прямоугольник в эллипс */
+            transform-origin: center center;
+        }
+
+        .orbit:nth-child(1) { transform: rotate(0deg);   }
+        .orbit:nth-child(2) { transform: rotate(72deg);  }
+        .orbit:nth-child(3) { transform: rotate(144deg); }
+        .orbit:nth-child(4) { transform: rotate(216deg); }
+        .orbit:nth-child(5) { transform: rotate(288deg); }
+
+        .orbit .atom {
+            position: absolute;
+            width: 10px; height: 10px;
+            margin: -5px 0 0 -5px;
+            background: #888;
+            border-radius: 50%;
+            offset-path: ellipse(100px 40px at 100px 40px);
+            offset-rotate: 0deg;
+            animation: move 4s linear infinite;
+        }
+
+        .orbit .atom:nth-child(2) {
+            animation-delay: -2s;
+        }
+
+        @keyframes move {
+            to { offset-distance: 100%; }
+        }
+
+        .loading-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: sans-serif;
+            font-size: 16px;
+            color: #888;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="loader">
+    <div class="orbit">
+        <div class="atom"></div>
+        <div class="atom"></div>
+    </div>
+    <div class="orbit">
+        <div class="atom"></div>
+        <div class="atom"></div>
+    </div>
+    <div class="orbit">
+        <div class="atom"></div>
+        <div class="atom"></div>
+    </div>
+    <div class="orbit">
+        <div class="atom"></div>
+        <div class="atom"></div>
+    </div>
+    <div class="orbit">
+        <div class="atom"></div>
+        <div class="atom"></div>
+    </div>
+    <div class="loading-text">Loading…</div>
+</div>
+</body>
+</html>
