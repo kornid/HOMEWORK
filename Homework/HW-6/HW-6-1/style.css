@@ -1,24 +1,12 @@
-.container_1 {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-#container1>ul>li:nth-child(even) {
+div.container_1>ul>li:nth-child(even) {
     color: pink;
 }
 
-.container_2{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-#container2>ul>li:nth-child(odd) {
+div.container_2>ul>li:nth-child(odd) {
     font-size: 22px;
 }
 
-#container3>ul>li:nth-child(2n+4)::after {
+div.container_3>ul>li:nth-child(2n+4)::after {
     content: "!";
     color: red;
     font-size: 22px;
@@ -26,11 +14,11 @@
 
 }
 
-#container4>ul>li:last-child {
+div.container_4>ul>li:last-child {
     color: purple;
 }
 
-#container5>ul>li::first-letter {
+div.container_5>ul>li::first-letter {
     font-size: 30px;
     color: red;
 }
