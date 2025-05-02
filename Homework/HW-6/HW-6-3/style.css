@@ -30,7 +30,7 @@ body{
 
 .form_registration{
     width: 500px;
-    height: 700px;
+    height: 655px;
     background-color: white;
     overflow: hidden;
     border-radius: 8px;
@@ -105,7 +105,7 @@ form input[type="submit"]{
 
 .facebook_registration{
     width: 500px;
-    height: 150px;
+    height: 120px;
     background-color: white;
     border-radius: 8px;
     border: 2px solid rgba(128, 128, 128, 0.52);
@@ -151,6 +151,26 @@ form input[type="submit"]{
 .facebook_icon .icon{
     width: 1.3em;
     height: 1.3em;
+}
+
+.forgot_password{
+    color: #4267B2;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.facebook_registration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*color: #4267B2;*/
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+.facebook_registration>p>span{
+    color: rgba(5, 160, 248, 0.89);
+    font-weight: bold;
 }
 
 
