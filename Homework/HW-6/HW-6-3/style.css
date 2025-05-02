@@ -137,35 +137,23 @@ form input[type="submit"]{
 }
 
 .facebook_icon{
-    display: flex;             /* или inline-flex, если нужно в строке */
-    align-items: center;       /* выровнять по центру по вертикали */
-    gap: 0.4em;                /* расстояние между иконкой и текстом */
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
     color: #4267B2;
     font-family: Arial, sans-serif;
     font-size: 23px;
     font-weight: bold;
+    margin-top: 0px;
 
 }
 
 .facebook_icon .icon{
-    width: 1.3em;                /* 1em = размер шрифта, можно 16px */
+    width: 1.3em;
     height: 1.3em;
 }
 
-/*.facebook_icon {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    gap: 0.4em;*/
-/*    !* Цвет можно менять через color: *!*/
-/*    color: #4267B2; !* классический синий Facebook *!*/
-/*}*/
 
-/*.facebook_icon .icon {*/
-/*    flex-shrink: 0;*/
-/*    !* размеры в 1em – подгоняются под font-size текста *!*/
-/*    width: 1em;*/
-/*    height: 1em;*/
-/*}*/
 
 
 
